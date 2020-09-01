@@ -5,7 +5,11 @@ Checks the status of a website/s and reports the status to a log file.
 * Powershell 5.1+
 
 # Instructions
-The "URLList.txt" file should contain websites entered on separate lines.
+<B>Parameters</b>:
+* URLListFile - path to a file containing the websites you wish to check, required
+* URLResultsFile - path to the results of the website checks, required
+
+Note: The "URLList.txt" file should contain websites entered on separate lines.
 
 ```
 powershell -ExecutionPolicy Bypass -File ".\CheckWebsiteStatus.ps1" -URLListFile "C:\ProgramData\OpConxps\URLList.txt" -URLResultsFile "C:\ProgramData\OpConxps\URLResults.txt"
