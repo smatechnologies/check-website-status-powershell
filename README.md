@@ -1,16 +1,20 @@
-# Project Name
-Project description
+# Check website status
+Checks the status of a website/s and reports the status to a log file.
+
+# Prerequisites
+* Powershell 5.1+
+
+# Instructions
+The "URLList.txt" file should contain websites entered on separate lines.
+
+```
+powershell -ExecutionPolicy Bypass -File ".\CheckWebsiteStatus.ps1" -URLListFile "C:\ProgramData\OpConxps\URLList.txt" -URLResultsFile "C:\ProgramData\OpConxps\URLResults.txt"
+```
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
-
-# Prerequisites
-
-
-# Instructions
-
 
 # License
 Copyright 2019 SMA Technologies
